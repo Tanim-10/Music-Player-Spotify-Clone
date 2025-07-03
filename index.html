@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey round roboto">
+                <div class="logo"><img class="invert" src="images/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="images/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="images/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="bottom bg-grey round roboto">
+                <div class="library">
+                    <div class="library-logo">
+                        <img class="invert" src="images/playlist.svg" alt="playlist">
+                    </div>
+                    <h4>Your Library</h4>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right ">
+            <div class="header bg-grey round">
+                <div class="nav">
+                    <svg width="44px" height="44px" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"
+                        transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)" stroke-width="10">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                    <svg width="44px" height="44px" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"
+                        transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)" stroke-width="10">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="16.384"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M768 903.232l-50.432 56.768L256 512l461.568-448 50.432 56.768L364.928 512z"
+                                fill="#ffffff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="signup">Sign Up</button>
+                    <button class="login">Log in</button>
+                </div>
+            </div>
+            <div class="playlist bg-grey roboto">
+                <h2>Spotify Playlists</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/ashiqui 2.jpg" alt="Arijit">
+                        <h3>Aashiqui 2</h3>
+                        <p class="artist">
+                            <a href="https://open.spotify.com/artist/09UmIX92EUH9hAK4bxvHx6" target="_blank"
+                                rel="noopener noreferrer">
+                                Mithoon
+                            </a>,
+                            <a href="https://open.spotify.com/artist/0E02VcvA5p1ndkLdqWD5JB" target="_blank"
+                                rel="noopener noreferrer">
+                                Ankit Tiwari
+                            </a>,
+                            <a href="https://open.spotify.com/artist/2kkQthS9OLpK4UqNWYqoVl" target="_blank"
+                                rel="noopener noreferrer">
+                                Jeet Gannguli
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/yjhd.jpg" alt="yjhd">
+                        <h3>Yeh Jawaani Hai Deewani</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"
+                                target="_blank" rel="noopener noreferrer">
+                                Pritam
+                            </a></p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/sanam teri kasam.jpg" alt="stk">
+                        <h3>Sanam Teri Kasam</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/0sSxphmGskGCKlwB9xa6WU"
+                                target="_blank" rel="noopener noreferrer">
+                                Himesh Reshammiya
+                            </a>,
+                            <a href="https://open.spotify.com/artist/5sifufajls8Q6k04Y4F8mH" target="_blank"
+                                rel="noopener noreferrer">
+                                Sameer Anjaan
+                            </a>,
+                            <a href="https://open.spotify.com/artist/5rTqcZKHN2APLJNzML4zEF" target="_blank"
+                                rel="noopener noreferrer">
+                                Subrat Sinha
+                            </a>,
+                            <a href="https://open.spotify.com/artist/6KZ6c43Dnjm6STHZ6avQU1" target="_blank"
+                                rel="noopener noreferrer">
+                                Shabbir Ahmed
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/findign her.jpg" alt="finding her">
+                        <h3>Finding Her</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/2IKfr1JgPRXmXKAWwrABc6"
+                                target="_blank" rel="noopener noreferrer">
+                                Kushagra
+                            </a>,
+                            <a href="https://open.spotify.com/artist/1zD9gVg8wPOmVfYxTjMHaT" target="_blank"
+                                rel="noopener noreferrer">
+                                Bharath
+                            </a>,
+                            <a href="https://open.spotify.com/artist/29S4JzoFUP1MCyMgKd83zM" target="_blank"
+                                rel="noopener noreferrer">
+                                Saaheal
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/young goat.jpg" alt="">
+                        <h3>Young G.O.A.T</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/0uOUeC51AxGnP6hB8gurwt"
+                                target="_blank" rel="noopener noreferrer">
+                                Cheema Y
+                            </a>,
+                            <a href="https://open.spotify.com/artist/0QntOArZgiNHoemAzwJPu5" target="_blank"
+                                rel="noopener noreferrer">
+                                Gur Sidhu
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/raanjhan.jpg" alt="ranjha">
+                        <h3>Raanjhan</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/1SyKki7JI1AZNKwgNMkn25"
+                                target="_blank" rel="noopener noreferrer">
+                                Sachet-Parampara
+                            </a>,
+                            <a href="https://open.spotify.com/artist/1E6arsXf5Fgsnv9YpSzjpE" target="_blank"
+                                rel="noopener noreferrer">
+                                Parampara Tandon
+                            </a>,
+                            <a href="https://open.spotify.com/artist/3GBSge8pq7mpezUQl0GAOA" target="_blank"
+                                rel="noopener noreferrer">
+                                Kausar Munir
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/arijit.jpg" alt="arijit">
+                        <h3>Arijit Singh-Love Songs</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"
+                                target="_blank" rel="noopener noreferrer">
+                                Arijit Singh
+                            </a></p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/karan auja.jpg" alt="karan">
+                        <h3>Making Memories</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/6DARBhWbfcS9E4yJzcliqQ"
+                                target="_blank" rel="noopener noreferrer">
+                                Karan Aujla
+                            </a>,
+                            <a href="https://open.spotify.com/artist/3nqS8jzqmsPKFJTp0BOIel" target="_blank"
+                                rel="noopener noreferrer">
+                                Ikky
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/moose tape.jpg" alt="moose">
+                        <h3>Moosetape</h3>
+                        <p class="artist"><a href="https://open.spotify.com/artist/4PULA4EFzYTrxYvOVlwpiQ"
+                                target="_blank" rel="noopener noreferrer">
+                                Sidhu Moose Wala
+                            </a></p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-wrapper">
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="song-cover/secario.jpg" alt="secario">
+                        <h3>Sicario</h3>
+                        <p class="artist"> <a href="https://open.spotify.com/artist/5r3wPya2PpeTTsXsGhQU8O"
+                                target="_blank" rel="noopener noreferrer">
+                                Shubh
+                            </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="seekbar">
+            <div class="progressbar"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="controlbar">
+
+            <div class="songinfo roboto"></div>
+            <div class="playbtn flex justifycenter itemscenter">
+                <svg id="previous" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#ffffff" stroke-width="25.6"
+                    transform="matrix(-1, 0, 0, 1, 0, 0)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <g>
+                                <path
+                                    d="M480,0c-11.776,0-21.333,9.557-21.333,21.333v210.325L42.283,2.645c-6.613-3.627-14.656-3.52-21.141,0.32 c-6.485,3.84-10.475,10.816-10.475,18.368v469.333c0,7.552,3.989,14.528,10.475,18.368C24.491,511.019,28.245,512,32,512 c3.541,0,7.083-0.875,10.283-2.645l416.384-229.013v210.325c0,11.776,9.557,21.333,21.333,21.333s21.333-9.557,21.333-21.333 V21.333C501.333,9.557,491.776,0,480,0z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <div class="play-circle" id="play">
+                    <svg width="22px" height="22px" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <svg id="next" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#ffffff" stroke-width="25.6">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <g>
+                                <path
+                                    d="M480,0c-11.776,0-21.333,9.557-21.333,21.333v210.325L42.283,2.645c-6.613-3.627-14.656-3.52-21.141,0.32 c-6.485,3.84-10.475,10.816-10.475,18.368v469.333c0,7.552,3.989,14.528,10.475,18.368C24.491,511.019,28.245,512,32,512 c3.541,0,7.083-0.875,10.283-2.645l416.384-229.013v210.325c0,11.776,9.557,21.333,21.333,21.333s21.333-9.557,21.333-21.333 V21.333C501.333,9.557,491.776,0,480,0z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="songtime roboto"></div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>

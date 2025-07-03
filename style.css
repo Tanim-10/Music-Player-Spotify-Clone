@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.left {
+    width: 25vw;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.home {
+    padding: 15px;
+    margin-bottom: 8px;
+}
+
+.right {
+    width: 75vw;
+}
+
+.home ul li {
+    gap: 15px;
+    display: flex;
+    width: 20px;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.bottom {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.library {
+    gap: 15px;
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+
+.library-logo img {
+    width: 20px;
+}
+
+.songlist {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    flex-grow: 1;
+    overflow-y: auto;
+    min-height: 0;
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 32px;
+    height: 60vh;
+    overflow: auto;
+}
+
+.footer {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    margin-top: auto;
+}
+
+.footer a {
+    color: gray;
+}
+
+.right {
+    padding: 8px;
+    padding-left: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    padding: 10px;
+}
+
+.buttons {
+    padding-right: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.signup {
+    font-weight: bold;
+    color: rgb(155, 154, 154);
+    background-color: transparent;
+    border: none;
+}
+
+.signup:hover {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.login {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.login:hover {
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+}
+
+.playlist {
+    padding: 15px;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 15px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.card {
+    width: 185px;
+    padding: 5px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #1f1f1f;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.artist a {
+    color: #b3b3b3;
+    font-size: small;
+}
+
+.playbar {
+    position: absolute;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.playbtn {
+    padding-top: 15px;
+    gap: 15px;
+    padding-bottom: 35px;
+}
+
+.playbtn img {
+    filter: invert(1);
+    fill: white;
+}
+
+.play-circle {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.songinfo{
+    color: white;
+    padding: 20px;
+    width: 400px;
+}
+
+.songtime{
+    color: white;
+    padding: 20px;
+}
+
+.controlbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.seekbar {
+    position: absolute;
+    height: 3px;
+    width: 90%;
+    background-color: #4d4d4d;
+    bottom: 20px;
+    left: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progressbar{
+    background-color: white;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.circle {
+    position: absolute;
+    bottom: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 20px;
+    left: 0%;
+    transition: left 0.5s;
+    opacity: 0;
+}
+
+.seekbar:hover{
+    .circle{
+        opacity: 1;
+    }
+    .progressbar{
+        background-color: #1ed760;
+    }
+}
+
+.songlist ul li {
+    list-style: none;
+    /* margin: 15px 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 7px;
+}
+
+.songlist ul li:hover {
+    background-color: #383838;
+}
+
+.songlist .info {
+    width: 150px;
+}
+
+.artist-name {
+    font-size: smaller;
+    color: #b3b3b3;
+}
