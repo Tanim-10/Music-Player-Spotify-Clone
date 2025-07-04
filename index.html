@@ -13,6 +13,9 @@
 <body>
     <div class="container flex bg-black">
         <div class="left">
+            <div class="close">
+                <img class="invert" src="images/close.svg" alt="close">
+            </div>
             <div class="home bg-grey round roboto">
                 <div class="logo"><img class="invert" src="images/logo.svg" alt="logo"></div>
                 <ul>
@@ -46,6 +49,7 @@
         <div class="right ">
             <div class="header bg-grey round">
                 <div class="nav">
+                    <img class="ham invert" src="images/hamburger.svg" alt="hamburger">
                     <svg width="44px" height="44px" viewBox="-1024 -1024 3072.00 3072.00" class="icon" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"
                         transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)" stroke-width="10">
@@ -280,7 +284,7 @@
 
             <div class="songinfo roboto"></div>
             <div class="playbtn flex justifycenter itemscenter">
-                <svg id="previous" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
+                <svg class="previous-button" id="previous" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#ffffff" stroke-width="25.6"
                     transform="matrix(-1, 0, 0, 1, 0, 0)">
@@ -301,7 +305,7 @@
                         <path d="M8 5v14l11-7z" />
                     </svg>
                 </div>
-                <svg id="next" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
+                <svg class="next-button" id="next" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#ffffff" stroke-width="25.6">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -317,7 +321,12 @@
                     </g>
                 </svg>
             </div>
-            <div class="songtime roboto"></div>
+            <div>
+                <div class="volume">
+                    <img class="invert" src="images/volume.svg" alt="">
+                </div>
+                <div class="songtime roboto"></div>
+            </div>
         </div>
     </div>
     <script src="script2.js"></script>
