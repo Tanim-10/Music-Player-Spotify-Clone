@@ -98,3 +98,51 @@
   scrollbar-color: #aaa #2e2e2e;
   scrollbar-width: thin;
 }
+
+
+
+#volume-seekbar {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #1ed760 50%, #4d4d4d 50%);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Chrome / Safari */
+#volume-seekbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-0%);
+  cursor: pointer;
+}
+
+/* Firefox */
+#volume-seekbar::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Firefox track */
+#volume-seekbar::-moz-range-track {
+  background: #4d4d4d;
+  height: 4px;
+  border-radius: 5px;
+}
+
+
+

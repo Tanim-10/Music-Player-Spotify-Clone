@@ -119,37 +119,66 @@ async function main() {
     })
 
     //adding event listener for hamburger 
-    document.querySelector(".ham").addEventListener("click", e=> {
+    document.querySelector(".ham").addEventListener("click", e => {
         document.querySelector(".left").style.left = "0"
     })
 
     //adding event listener for close 
-    document.querySelector(".close").addEventListener("click", e=> {
+    document.querySelector(".close").addEventListener("click", e => {
         document.querySelector(".left").style.left = "-100%"
     })
 
     //adding event listener to next prev 
-    previous.addEventListener("click", ()=>{
+    previous.addEventListener("click", () => {
         let index = songs.indexOf(currentsong.src.split("/").slice(-1)[0])
         console.log(songs, index);
-        if(index-1 < 0){
-            playmusic(songs[songs.length-1])
+        if (index - 1 < 0) {
+            playmusic(songs[songs.length - 1])
         }
-        else{
-            playmusic(songs[index-1])
+        else {
+            playmusic(songs[index - 1])
         }
     })
-    next.addEventListener("click", ()=>{
+    next.addEventListener("click", () => {
         let index = songs.indexOf(currentsong.src.split("/").slice(-1)[0])
         console.log(songs, index);
-        if(index+1 >= songs.length){
+        if (index + 1 >= songs.length) {
             playmusic(songs[0])
         }
-        else{
-            playmusic(songs[index+1])
+        else {
+            playmusic(songs[index + 1])
         }
-        
     })
+
+    //adding event listener to volume 
+    document.getElementById("volume-seekbar").addEventListener("input", (e) => {
+        currentsong.volume = parseInt(e.target.value) / 100
+    })
+
+    //volume slider gradient
+    const volumeSlider = document.getElementById("volume-seekbar");
+    volumeSlider.addEventListener("input", (e) => {
+        const val = e.target.value;
+        currentsong.volume = parseInt(val) / 100;
+        // Dynamically update background gradient to show progress
+        e.target.style.background = `linear-gradient(to right, #1ed760 ${val}%, #ccc ${val}%)`;
+    });
+
+    //mute unmute
+    let isMuted = false;
+
+document.getElementById("volume-icon").addEventListener("click", () => {
+    isMuted = !isMuted;
+    currentsong.muted = isMuted;
+
+    const icon = document.getElementById("volume-icon");
+    if (isMuted) {
+        icon.src = "images/mute.svg"; 
+    } else {
+        icon.src = "images/volume.svg"; 
+    }
+});
+
 }
 
 main();

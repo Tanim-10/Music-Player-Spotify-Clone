@@ -284,8 +284,8 @@
 
             <div class="songinfo roboto"></div>
             <div class="playbtn flex justifycenter itemscenter">
-                <svg class="previous-button" id="previous" fill="#ffffff" height="32px" width="32px" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <svg class="previous-button" id="previous" fill="#ffffff" height="32px" width="32px" version="1.1"
+                    id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="-256 -256 1024.00 1024.00" xml:space="preserve" stroke="#ffffff" stroke-width="25.6"
                     transform="matrix(-1, 0, 0, 1, 0, 0)">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -321,9 +321,10 @@
                     </g>
                 </svg>
             </div>
-            <div>
+            <div class="volumetime">
                 <div class="volume">
-                    <img class="invert" src="images/volume.svg" alt="">
+                    <img class="invert" id="volume-icon" src="images/volume.svg" alt="">
+                    <input type="range" id="volume-seekbar" class="range">
                 </div>
                 <div class="songtime roboto"></div>
             </div>
